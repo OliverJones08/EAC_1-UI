@@ -5,7 +5,7 @@ using TMPro;
 
 public class Paroimpar : MonoBehaviour
 {
-    public TMP_InputField imputnum1;
+    public TMP_InputField inputNum1;
     public TextMeshProUGUI txtParOImpar;
     int num1;
 
