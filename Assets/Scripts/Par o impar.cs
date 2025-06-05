@@ -6,35 +6,35 @@ using TMPro;
 public class Paroimpar : MonoBehaviour
 {
     public TMP_InputField inputNum1;
-    public TextMeshProUGUI txtParOImpar;
+    public TextMeshProUGUI textParOImpar;
     int num1;
 
     // Start is called before the first frame update
     void Start()
     {
-        txtParOImpar.text = string.Empty;
+        textParOImpar.text = string.Empty;
     }
 
     public void EsParOEsImpar()
     {
         if (inputNum1.text == "")
         {
-            txtParOImpar.text = "El campo esta vacio";
+            textParOImpar.text = "El campo esta vacio";
         }
         num1 = int.Parse(inputNum1.text);
 
         if(num1 <= 0)
         {
-            txtParOImpar.text = "El numero debe ser mayor que cero";
+            textParOImpar.text = "El numero debe ser mayor que cero";
         }
 
         if (num1 % 2 == 0)
         {
-            txtParOImpar.text = "El numero proporcionado es par";
+            textParOImpar.text = "El numero proporcionado es par";
         }
 
         else {
-            txtParOImpar.text = "El numero proporcionado es impar";
+            textParOImpar.text = "El numero proporcionado es impar";
         }
     }
 }
